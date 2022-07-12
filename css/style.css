@@ -1,0 +1,403 @@
+/* ******************* Global Class ***************** */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  background-color: antiquewhite;
+}
+
+/* ******************** Layout Style ******************** */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.col-1 {
+  width: 8.33%;
+  float: left;
+}
+.col-2 {
+  width: 16.66%;
+  float: left;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+}
+.col-4 {
+  width: 33.33%;
+  float: left;
+}
+.col-5 {
+  width: 41.66%;
+  float: left;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+}
+.col-7 {
+  width: 58.33%;
+  float: left;
+}
+.col-8 {
+  width: 66.66%;
+  float: left;
+}
+.col-9 {
+  width: 75%;
+  float: left;
+}
+.col-10 {
+  width: 83.33%;
+  float: left;
+}
+.col-11 {
+  width: 91.66%;
+  float: left;
+}
+.col-12,
+.row {
+  width: 100%;
+  float: left;
+}
+
+/* (((((((((((((((((( Header )))))))))))))))))) */
+
+header {
+  background: url(../images/hero_background_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  padding: 20px 0px;
+}
+.logo-part img {
+}
+.menu-part {
+  text-align: end;
+  color: white;
+}
+.menu-part li {
+  display: inline-block;
+  padding: 10px;
+}
+.menu-part li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  transition: ease-in-out 0.4s;
+}
+.menu-part li a:hover {
+  background-color: rgba(224, 156, 156, 0.322);
+  border-radius: 5px;
+}
+.hero-part {
+  text-align: center;
+  color: white;
+  padding-top: 75px;
+}
+.hero-part h1 {
+  font-size: 50px;
+}
+.hero-part p {
+  font-size: 16px;
+  padding-top: 25px;
+}
+.hero-btn-part {
+  margin: 50px 0px;
+}
+.btn-light {
+  background-color: white;
+  color: black;
+  border: 1px solid #fff;
+}
+.hero-btn-part button {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* (((((((((((((((( Info Section )))))))))))))))) */
+
+#info {
+  padding: 200px 0px 100px;
+  background: url(../images/info-background.png) no-repeat;
+  background-size: cover;
+  margin-top: -180px;
+}
+.info-image-part {
+  text-align: center;
+}
+.info-box-part {
+  text-align: center;
+}
+.box-part {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  margin: 20px 0pxs;
+}
+
+/* (((((((((((((((( Love and Ready Section )))))))))))))))) */
+
+#stable-ready {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+.ready {
+  text-align: end;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+.ready h2 {
+  margin-bottom: 28px;
+}
+.ready p {
+  margin-bottom: 28px;
+}
+.ready button {
+  background-color: #33d2fd;
+  padding: 14px 36px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+.made-with-love {
+  padding-left: 20px;
+}
+.love {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  box-shadow: 5px 5px 15px gray;
+}
+.love-image {
+  padding-left: 25px;
+}
+.love-image img {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+.use-back {
+  /* background-image: url(../images/use-sign-background.png); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #33d2fd;
+  padding: 20px 0px;
+  border-radius: 3px;
+}
+
+/* (((((((((((((((( Everythin you need  Section )))))))))))))))) */
+
+#need {
+  background-color: #fafafc;
+}
+.you-need {
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+.need-image {
+  text-align: center;
+}
+.everything {
+  text-align: start;
+  padding-left: 70px;
+}
+.everything h2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.everything p {
+  margin-top: 30px;
+  line-height: 30pt;
+}
+/* (((((((((((((((( Everythin you need  Checkbox Section )))))))))))))))) */
+
+/* The container */
+.c-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.c-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+
+.c-box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.c-box input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+
+.c-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.c-box .checkmark:after {
+  border: solid white;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 3px 3px 0px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* (((((((((((((((( Now availabel Section )))))))))))))))) */
+
+#available {
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  background-image: url(../images/available-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.now {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.available-image {
+  text-align: center;
+}
+.now-available h2 {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.now-available p {
+  margin-bottom: 40px;
+  padding-right: 80px;
+}
+.apple {
+  padding-right: 60px;
+}
+.app-today {
+  text-align: center;
+  padding: 10px 20px;
+}
+.app-today button {
+  padding: 15px 50px;
+  background: linear-gradient(#fe7370, #f7437b);
+  border-radius: 5px;
+}
+
+/* (((((((((((((((( Get In Touch Section )))))))))))))))) */
+.get {
+  background-color: white;
+}
+.touch {
+  margin-top: 140px;
+  padding-bottom: 50px;
+}
+.company {
+  padding-left: 100px;
+}
+.company h3 {
+  padding-bottom: 10px;
+}
+.company ul {
+  list-style: none;
+}
+.company li {
+  padding: 5px 0;
+}
+.get-touch h2 {
+  text-align: center;
+  padding: 25px 0;
+}
+.get-touch p {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.count {
+  padding-bottom: 100px;
+  text-align: center;
+}
+.count-input {
+  padding: 15px 100px;
+  background-color: #ccc;
+}
+.count button {
+  padding: 15px 30px;
+  background-color: #33d2fd;
+  color: black;
+}
+
+/* (((((((((((((((( Footer Section )))))))))))))))) */
+#footer-end {
+  background-color: #233148;
+  padding: 8px 0;
+}
+.copy-right {
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+.online-sign {
+  text-align: center;
+  padding-left: 95px;
+}
+.online-sign img {
+  padding: 30px;
+}
